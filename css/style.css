@@ -1,0 +1,101 @@
+/* ========== CSS VARIABLE OVERRIDES ========== */
+:root {
+  --bs-primary: #C95B00; /* Custom Bootstrap primary color */
+  --bs-secondary: #C8D5C4;
+  --bs-light: #f9d8b3;
+  --bs-dark: #000000;
+  --bs-font-sans-serif: 'Segoe UI', sans-serif;
+}
+
+/* ========== GLOBAL STYLES ========== */
+body {
+  font-family: var(--bs-font-sans-serif);
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== NAVBAR ========== */
+.navbar-brand {
+  font-weight: 700;
+  color: var(--bs-primary);
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--bs-primary);
+}
+
+
+
+/* ========== CARDS ========== */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== TESTIMONIALS ========== */
+blockquote {
+  font-style: italic;
+  border-left: 4px solid var(--bs-primary);
+  padding-left: 1rem;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  font-size: 0.9rem;
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+  background-color: var(--bs-secondary);
+  color: #ffffff;
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
